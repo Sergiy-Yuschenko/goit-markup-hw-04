@@ -1,0 +1,446 @@
+:root {
+    --accent-color: #2196F3; /*( частина логотипу,hover по посиланнях тобто акцент)*/
+    --logo-color: #000000; /*частина логотипу (світлий фон)*/
+    --heading-color: #212121; /*(h2, h3, посилання, текст на кнопках портфоліо) */
+    --main-color: #757575; /*(посилання на e-mail, абзаци)*/
+    --main-color-dark-backgr: #ffffff; /*(h1, кнопка "заказать услугу", рядок адреси, частина логотипу на темному фоні)*/
+    --backgr-color-first: #2F303A; /*(footer, hero)*/
+    --backgr-color-second: #F5F4FA; /*(section "Our command",  кнопки портфоліо)*/
+    --addres-second-color: rgba(255, 255, 255, 0.6); /*(емейл і телефон футера)*/
+    --main-font: 'Roboto', Roboto, sans-serif; /*головний шрифт для всього тексту*/
+    --secondary-font: 'Raleway', Raleway, sans-serif; /*вторинний шрифт для логотипу*/
+    --card-set-specialization: 30px; /*Відстань між карточками блоку "Чим ми займаємося"*/
+    --card-set-our-command: 30px; /*Відстань між карточками блоку "Наша команда"*/
+    --card-set-portfolio: 30px; /*Відстань між карточками блоку */
+}
+
+body {
+         color: var(--main-color);
+        font-family: var(--main-font);
+        background: #e5e5e5;
+}
+
+.list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+}
+
+.link {
+        text-decoration: none;
+        color: var(--main-color);
+}
+
+.button {
+        font-family: var(--main-font);
+        border: 0;
+        border-radius: 4px;
+}
+
+.visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+      }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+        margin: 0;
+}
+
+ul,
+ol {
+        margin: 0;
+        padding: 0;
+}
+
+p {
+        margin: 0;
+}
+
+img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+}
+
+.container {
+        width: 1600px;
+        margin: 0 auto;
+        padding: 0 215px;
+        display: flex;
+        /*justify-content: center;*/
+        align-items: center;
+        background: #ffffff ;
+}
+
+/* ============== HEADER ============== */
+
+.header > .container {
+        display: flex;
+        padding-top: 24px;
+        padding-bottom: 25px;
+}
+
+.site-nav {
+        display: flex;
+        align-items: center;
+}
+
+.navigation-list {
+        display: flex;
+}
+
+.address-list-header {
+        display: flex;
+        align-items: center;
+}
+
+.header .logo {
+        margin-right: 93px;
+}
+
+.address {
+        font-style: normal;
+}
+
+.navigation-list-item:not(:last-child) {
+        margin-right: 50px;
+}
+.header .address-list-item:not(:last-child) {
+        margin-right: 50px;
+}
+
+.header .address {
+        margin-left: auto;
+        /*margin-right: 215px;*/
+}
+
+.logo {
+        color: var(--logo-color);
+        font-family: var(--secondary-font);
+        font-weight: bold;
+        font-size: 26px;
+        line-height: 1.192;
+        letter-spacing: 0.03em;
+}
+
+.logo-first {
+        color: var(--accent-color);
+}
+
+.navigation-list-link,
+.address-list-link {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.143;
+        letter-spacing: 0.02em;      
+ }
+
+.navigation-list-link{
+        color: var(--heading-color);
+}
+
+.address-list-link {
+        color: var(--main-color);
+}
+
+.navigation-list-link:hover,
+.navigation-list-link:focus,
+.address-list-link:hover,
+.address-list-link:focus {
+         color: var(--accent-color);
+}
+
+.navigation-list-link.active {
+        color: var(--accent-color);
+}
+
+
+/* ============== END HEADER ============== */
+
+/* ============== HERO SECTION ============== */
+
+.hero-section > .container {
+                background-color: var(--backgr-color-first);
+                flex-direction: column;
+}
+
+.hero-title {
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.364;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--main-color-dark-backgr);
+        margin-top: 200px;
+        margin-bottom: 30px;
+
+}
+
+.hero-button {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.625;
+        text-align: center;
+        letter-spacing: 0.03em;
+        min-width: 200px;
+        height: 50px;   
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        cursor: pointer;
+        padding: 10px 32px;
+        color: var(--main-color-dark-backgr);
+        background-color: var(--accent-color);
+        margin-bottom: 200px;
+}
+
+/* ============== HERO SECTION END ============== */
+
+/* ============== ADVANTAGES SECTION ============== */
+.advantages-list {
+        display: flex;
+        padding-top: 94px;
+        padding-bottom: 94px;
+}
+
+.advantages-list-item {
+        padding: 3px;
+        font-size: 14px;
+        letter-spacing: 0.03em;
+}
+
+.advantages-list-item:not(:last-child) {
+        margin-right: 30px;
+}
+
+.advantages-title {
+        font-weight: 700;
+        line-height: 1.142;
+        text-transform: uppercase;
+        color: var(--heading-color);
+        margin-bottom: 10px;
+}
+
+.advantages-description {
+        font-weight: 400;
+        line-height: 1.714;
+}
+
+/* ============== ADVANTAGES SECTION END ============== */
+
+/* ============== SPECIALIZATION SECTION ============== */
+
+.specialization-section > .container {
+        flex-direction: column;
+        padding-bottom: 94px;
+}
+.specialization-list {
+        display: flex;
+        /*width:75%;*/
+        /*margin-top: 50px; */
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-left: calc(-1*var(--card-set-specialization));
+        margin-top: calc(-1*var(--card-set-specialization));    
+}
+
+.specialization-list-item {
+        flex-basis: calc(100%/3 - var(--card-set-specialization));
+        margin-left: var(--card-set-specialization);
+        margin-top: var(--card-set-specialization);
+}
+
+.specialization-title,
+.our-command-title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.167;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--heading-color);
+}
+
+.specialization-title {
+        margin-bottom: 50px;
+}
+ 
+/* ============== SPECIALIZATION SECTION END ============== */
+
+/* ============== OUR COMAND ============== */
+
+.our-command-section > .container{
+        background-color: var(--backgr-color-second);
+        padding-top: 94px;
+        padding-bottom: 94px;
+        flex-direction: column;
+}
+
+.our-command-list {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          margin-left: calc(-1*var(--card-set-our-command));
+          margin-top: calc(-1*var(--card-set-our-command));
+}
+
+.our-command-list-item {
+        background-color: var(--main-color-dark-backgr);
+        flex-basis: calc(100%/4 - var(--card-set-our-command));
+        margin-left: var(--card-set-our-command);
+        margin-top: var(--card-set-our-command);
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+
+}
+
+.our-command-card-content {
+        padding: 30px 10px;
+}
+
+.our-command-title {
+        margin-bottom:50px;
+}
+
+.our-specialist-name {
+        margin-bottom: 10px;
+        font-weight: 500;
+        color: var(--heading-color);
+}
+
+.our-specialist-specialization {
+        font-weight: 400;
+}
+
+.our-specialist-name,
+.our-specialist-specialization {
+        font-size: 16px;
+        line-height: 1.188;
+        text-align: center;
+        letter-spacing: 0.03em;
+}
+
+/* ============== OUR COMAND END ============== */
+
+/* ============== FOOTER ============== */
+.footer > .container {
+        background-color: var(--backgr-color-first);
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 60px;
+        padding-bottom: 60px;
+}
+.footer .logo {
+       margin-bottom: 20px;
+}
+
+.footer .addres-list-item:not(:last-child) {
+        margin-bottom: 9px;
+}
+
+.logo-second-dark {
+        color: var(--main-color-dark-backgr);
+}
+
+.address-footer-link {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.714;
+        letter-spacing: 0.03em;
+        color: var(--addres-second-color);
+}
+
+.location {
+        color: var(--main-color-dark-backgr);
+}
+/* ============== FOOTER END ============== */
+
+/* ============== PORTFOLIO.HTML ============== */
+.portfolio-section .container {
+        padding-top: 94px;
+        padding-bottom: 94px;
+        flex-direction: column;
+        align-items: center;
+}
+.portfolio-nav{
+        margin-left: 8px;
+        margin-bottom: 50px;
+}
+
+.portfolio-button {
+        color: var(--heading-color);
+        background-color: var(--backgr-color-second);
+        padding: 6px 22px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.625;
+        text-align: center;
+        letter-spacing: 0.03em;
+        margin-right: 8px;
+}
+
+.portfolio-button:hover,
+.portfolio-button:focus {
+        background-color: var(--accent-color);
+        color: var(--main-color-dark-backgr);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+/*.portfolio-description {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.556;
+        letter-spacing: 0.03em;
+        color: var(--main-color-dark-backgr);
+        background-color: var(--accent-color);
+} */
+.portfolio-list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-left: calc(-1*var(--card-set-portfolio));
+        margin-top: calc(-1*var(--card-set-portfolio));
+}
+
+.portfolio-list-item {
+        flex-basis: calc(100%/3 - var(--card-set-portfolio));
+        margin-left: var(--card-set-portfolio);
+        margin-top: var(--card-set-portfolio);
+}
+
+.portfolio-card-content {
+        padding: 20px 24px;
+        border: 1px solid #EEEEEE;
+        border-top-width: 0;
+        box-sizing: border-box;
+}
+
+.portfolio-title {
+        margin-bottom: 4px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+        color: var(--heading-color);
+}
+
+.portfolio-type {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.875;
+        letter-spacing: 0.03em;
+
+}
+
+/* ============== PORTFOLIO.HTML END ============== */
