@@ -263,6 +263,21 @@ img {
         margin-right: 30px;
 }
 
+.advantages-icon-background {
+        width:auto;
+        height: 120px;
+        background: var(--backgr-color-second);
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.advantages-icon {
+        width: 70px;
+        height: 70px;
+}
+
 .advantages-title {
         font-weight: 700;
         line-height: 1.142;
