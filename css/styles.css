@@ -7,6 +7,7 @@
     --backgr-color-first: #2F303A; /*(footer, hero)*/
     --backgr-color-second: #F5F4FA; /*(section "Our command",  кнопки портфоліо)*/
     --addres-second-color: rgba(255, 255, 255, 0.6); /*(емейл і телефон футера)*/
+    --hero-gradient-color: rgba(47, 48, 58, 0.4); /*колір градієнту секції Hero*/
     --main-font: 'Roboto', Roboto, sans-serif; /*головний шрифт для всього тексту*/
     --secondary-font: 'Raleway', Raleway, sans-serif; /*вторинний шрифт для логотипу*/
     --card-set-specialization: 30px; /*Відстань між карточками блоку "Чим ми займаємося"*/
@@ -173,8 +174,11 @@ img {
 /* ============== HERO SECTION ============== */
 
 .hero-section > .container {
-                background-color: var(--backgr-color-first);
+                /*background-color: var(--backgr-color-first);*/
                 flex-direction: column;
+                background-image: linear-gradient(var(--hero-gradient-color), var(--hero-gradient-color)), url(../images/background_photo.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
 }
 
 .hero-title {
