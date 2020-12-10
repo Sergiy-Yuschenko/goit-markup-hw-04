@@ -8,6 +8,7 @@
     --backgr-color-second: #F5F4FA; /*(section "Our command",  кнопки портфоліо)*/
     --addres-second-color: rgba(255, 255, 255, 0.6); /*(емейл і телефон футера)*/
     --hero-gradient-color: rgba(47, 48, 58, 0.4); /*колір градієнту секції Hero*/
+    --social-link-background-dark: rgba(255, 255, 255, 0.1); /*колір фону посилань на соціальні мережі на темному фоні*/
     --social-link-color: #afb1b8; /*колір іконок-посилань на соціальні мережі*/
     --main-font: 'Roboto', Roboto, sans-serif; /*головний шрифт для всього тексту*/
     --secondary-font: 'Raleway', Raleway, sans-serif; /*вторинний шрифт для логотипу*/
@@ -428,12 +429,14 @@ img {
 /* ============== FOOTER ============== */
 .footer > .container {
         background-color: var(--backgr-color-first);
-        flex-direction: column;
+        /*flex-direction: column;*/
         align-items: flex-start;
         padding-top: 60px;
         padding-bottom: 60px;
 }
+
 .footer .logo {
+        display: block;
        margin-bottom: 20px;
 }
 
@@ -456,6 +459,31 @@ img {
 .location {
         color: var(--main-color-dark-backgr);
 }
+
+.social-list-our-projekt {
+        margin-left: 70px;
+        margin-top: 12px;        
+}
+
+.social-list-invitation
+ {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.142;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+        color: var(--main-color-dark-backgr);
+        margin-bottom: 20px;
+}
+
+.dark-social {
+        background: var(--social-link-background-dark);
+}
+
+.dark-social .social-list-icon {
+        fill: var(--main-color-dark-backgr)
+}
+.
 /* ============== FOOTER END ============== */
 
 /* ============== PORTFOLIO.HTML ============== */
