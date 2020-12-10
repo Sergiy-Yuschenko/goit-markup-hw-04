@@ -8,6 +8,7 @@
     --backgr-color-second: #F5F4FA; /*(section "Our command",  кнопки портфоліо)*/
     --addres-second-color: rgba(255, 255, 255, 0.6); /*(емейл і телефон футера)*/
     --hero-gradient-color: rgba(47, 48, 58, 0.4); /*колір градієнту секції Hero*/
+    --social-link-color: #afb1b8; /*колір іконок-посилань на соціальні мережі*/
     --main-font: 'Roboto', Roboto, sans-serif; /*головний шрифт для всього тексту*/
     --secondary-font: 'Raleway', Raleway, sans-serif; /*вторинний шрифт для логотипу*/
     --card-set-specialization: 30px; /*Відстань між карточками блоку "Чим ми займаємося"*/
@@ -374,6 +375,7 @@ img {
 
 .our-specialist-specialization {
         font-weight: 400;
+        margin-bottom: 16px;
 }
 
 .our-specialist-name,
@@ -383,6 +385,43 @@ img {
         text-align: center;
         letter-spacing: 0.03em;
 }
+
+.social-list {
+        display: flex;
+        justify-content: center;
+}
+
+.social-list-item:not(:last-child) {
+        margin-right: 10px;
+}
+
+.social-list-link {
+        display: block;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.social-list-icon {
+        width: 20px;
+        height: 20px;
+        fill: var(--social-link-color);
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+        background: var(--accent-color);
+}
+
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+        fill: var(--main-color-dark-backgr);
+}
+
+
 
 /* ============== OUR COMAND END ============== */
 
