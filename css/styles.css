@@ -448,11 +448,13 @@ img {
         border-radius: 4px;
 }
 
-.our-client-link:hover {
+.our-client-link:hover,
+.our-client-link:focus {
         border-color: var(--accent-color);
 }
 
-.our-client-link:hover .our-clients-icon {
+.our-client-link:hover .our-clients-icon,
+.our-client-link:focus .our-clients-icon {
         fill: var(--accent-color);
 }
 
