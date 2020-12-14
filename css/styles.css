@@ -20,7 +20,6 @@
 body {
          color: var(--main-color);
         font-family: var(--main-font);
-        background: #e5e5e5;
 }
 
 .list {
@@ -79,13 +78,13 @@ img {
 }
 
 .container {
-        width: 1600px;
+        width: 1200px;
         margin: 0 auto;
-        padding: 0 215px;
+        padding: 0 15px;
         display: flex;
         /*justify-content: center;*/
         align-items: center;
-        background: #ffffff ;
+        background: transparent;
 }
 
 /* ============== HEADER ============== */
@@ -208,13 +207,17 @@ img {
 /* ============== END HEADER ============== */
 
 /* ============== HERO SECTION ============== */
+.hero-section {
+        background-image: linear-gradient(var(--hero-gradient-color), var(--hero-gradient-color)), url(../images/background_photo.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+}
 
 .hero-section > .container {
-                /*background-color: var(--backgr-color-first);*/
-                flex-direction: column;
-                background-image: linear-gradient(var(--hero-gradient-color), var(--hero-gradient-color)), url(../images/background_photo.jpg);
-                background-repeat: no-repeat;
-                background-size: cover;
+        /*background-color: var(--backgr-color-first);*/
+        flex-direction: column;
+        padding-top: 200px;
+        padding-bottom: 200px;
 }
 
 .hero-title {
@@ -225,7 +228,6 @@ img {
         letter-spacing: 0.06em;
         text-transform: uppercase;
         color: var(--main-color-dark-backgr);
-        margin-top: 200px;
         margin-bottom: 30px;
 
 }
@@ -243,16 +245,17 @@ img {
         padding: 10px 32px;
         color: var(--main-color-dark-backgr);
         background-color: var(--accent-color);
-        margin-bottom: 200px;
 }
 
 /* ============== HERO SECTION END ============== */
 
 /* ============== ADVANTAGES SECTION ============== */
-.advantages-list {
-        display: flex;
+.advantages > .container {
         padding-top: 94px;
         padding-bottom: 94px;
+}
+.advantages-list {
+        display: flex;
 }
 
 .advantages-list-item {
@@ -303,18 +306,11 @@ img {
 }
 .specialization-list {
         display: flex;
-        /*width:75%;*/
-        /*margin-top: 50px; */
         justify-content: center;
-        flex-wrap: wrap;
-        margin-left: calc(-1*var(--card-set-specialization));
-        margin-top: calc(-1*var(--card-set-specialization));    
 }
 
-.specialization-list-item {
-        flex-basis: calc(100%/3 - var(--card-set-specialization));
-        margin-left: var(--card-set-specialization);
-        margin-top: var(--card-set-specialization);
+.specialization-list-item:not(:last-child) {
+        margin-right: var(--card-set-specialization);
 }
 
 .specialization-title,
@@ -336,8 +332,11 @@ img {
 
 /* ============== OUR COMAND ============== */
 
-.our-command-section > .container{
+.our-command-section {
         background-color: var(--backgr-color-second);
+}
+
+.our-command-section > .container{
         padding-top: 94px;
         padding-bottom: 94px;
         flex-direction: column;
@@ -346,19 +345,16 @@ img {
 .our-command-list {
           display: flex;
           justify-content: center;
-          flex-wrap: wrap;
-          margin-left: calc(-1*var(--card-set-our-command));
-          margin-top: calc(-1*var(--card-set-our-command));
 }
 
 .our-command-list-item {
         background-color: var(--main-color-dark-backgr);
-        flex-basis: calc(100%/4 - var(--card-set-our-command));
-        margin-left: var(--card-set-our-command);
-        margin-top: var(--card-set-our-command);
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
+}
 
+.our-command-list-item:not(:last-child) {
+        margin-right: var(--card-set-our-command);
 }
 
 .our-command-card-content {
@@ -504,8 +500,11 @@ img {
 /* ============== OUR CLIENTS END ============== */
 
 /* ============== FOOTER ============== */
-.footer > .container {
+.footer {
         background-color: var(--backgr-color-first);
+}
+
+.footer > .container {
         align-items: flex-start;
         padding-top: 60px;
         padding-bottom: 60px;
@@ -572,6 +571,7 @@ img {
 .portfolio-nav{
         margin-left: 8px;
         margin-bottom: 50px;
+        display: flex;
 }
 
 .portfolio-button {
@@ -583,6 +583,9 @@ img {
         line-height: 1.625;
         text-align: center;
         letter-spacing: 0.03em;
+}
+
+.portfolio-button:not(:last-child){
         margin-right: 8px;
 }
 
