@@ -208,16 +208,17 @@ img {
 
 /* ============== HERO SECTION ============== */
 .hero-section {
-        background-image: linear-gradient(var(--hero-gradient-color), var(--hero-gradient-color)), url(../images/background_photo.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
+        background-color: var(--backgr-color-first);
 }
-
 .hero-section > .container {
         /*background-color: var(--backgr-color-first);*/
         flex-direction: column;
         padding-top: 200px;
         padding-bottom: 200px;
+        width:1600px;
+        background-image: linear-gradient(var(--hero-gradient-color), var(--hero-gradient-color)), url(../images/background_photo.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
 }
 
 .hero-title {
